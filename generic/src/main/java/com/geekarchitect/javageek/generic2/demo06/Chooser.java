@@ -19,11 +19,11 @@ public class Chooser<T> {
     }
 
     public static void main(String[] args) {
-        List<Integer> intList = List.of(1, 2, 3, 4, 5, 6);
+        /*List<Integer> intList = List.of(1, 2, 3, 4, 5, 6);
         Chooser<Number> chooser = new Chooser<>(intList);
         for (int i = 0; i < 10; i++) {
             Number choice = chooser.choose();
             System.out.println(choice);
-        }
+        }*/
     }
 }

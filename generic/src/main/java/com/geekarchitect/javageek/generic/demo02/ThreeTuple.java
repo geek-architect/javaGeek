@@ -2,12 +2,12 @@ package com.geekarchitect.javageek.generic.demo02;
 
 /**
  * A three-element tuple.
- * @param <A> the type of the first element
- * @param <B> the type of the second element
- * @param <C> the type of the third element
+ * @param <T> the type of the first element
+ * @param <U> the type of the second element
+ * @param <V> the type of the third element
  */
-public class ThreeTuple<A, B, C> extends Tuple<A, B> {
-    private final C third;
+public class ThreeTuple<T, U, V> extends Tuple<T, U> {
+    private final V third;
 
     /**
      * Constructs a new ThreeTuple object.
@@ -15,7 +15,7 @@ public class ThreeTuple<A, B, C> extends Tuple<A, B> {
      * @param second the second element
      * @param third  the third element
      */
-    public ThreeTuple(A first, B second, C third) {
+    public ThreeTuple(T first, U second, V third) {
         super(first, second);
         this.third = third;
     }
@@ -24,7 +24,7 @@ public class ThreeTuple<A, B, C> extends Tuple<A, B> {
      * Returns the third element.
      * @return the third element
      */
-    public C getThird() {
+    public V getThird() {
         return third;
     }
 }

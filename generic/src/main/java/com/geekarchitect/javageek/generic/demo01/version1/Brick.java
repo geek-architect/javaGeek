@@ -83,5 +83,14 @@ public class Brick {
     public double getVolume() {
         return length * width * height;
     }
+
+    @Override
+    public String toString() {
+        return "Brick{" +
+                "length=" + length +
+                ", width=" + width +
+                ", height=" + height +
+                '}';
+    }
 }
 

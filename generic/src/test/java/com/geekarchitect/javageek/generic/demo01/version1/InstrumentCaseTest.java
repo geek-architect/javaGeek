@@ -20,7 +20,8 @@ class InstrumentCaseTest {
     @Test
     public void testGetInstrument01() {
         Flute flute = new Flute("Flute", "wood", "40cm", "reed", "C");
-        InstrumentCase instrumentCase = new InstrumentCase(flute);
+        InstrumentCase instrumentCase = new InstrumentCase();
+        instrumentCase.setInstrument(flute);
         // 从乐器盒中取出乐器,需要进行强制类型转换
         Flute theFlute = (Flute) instrumentCase.getInstrument();
         System.out.println(theFlute);
@@ -28,7 +29,8 @@ class InstrumentCaseTest {
     @Test
     public void testGetBrick() {
         Brick brick = new Brick(2, 4, 6);
-        InstrumentCase instrumentCase = new InstrumentCase(brick);
+        InstrumentCase instrumentCase = new InstrumentCase();
+        instrumentCase.setInstrument(brick);
         // 乐器盒中竟然可以取出板砖,
         Brick theBrick = (Brick) instrumentCase.getInstrument();
         System.out.println(theBrick);

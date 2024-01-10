@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 class InstrumentCaseTest {
-
     @Test
     void getInstrument01() {
         Flute flute = new Flute("Flute", "Wood", "60cm", "Metal", "C");
@@ -29,9 +28,10 @@ class InstrumentCaseTest {
     @Test
     void getInstrument03() {
         Flute flute = new Flute("Flute", "Wood", "60cm", "Metal", "C");
-        InstrumentCase instrumentCase = new InstrumentCase(flute);
+        InstrumentCase instrumentCase = new InstrumentCase();
+        instrumentCase.setInstrument(flute);
         //无法从乐器盒中取出Flute对象,只能取出Instrument对象
-        //Flute theFlute = instrumentCase.getInstrument();
+        Flute theFlute = (Flute) instrumentCase.getInstrument();
     }
     @Test
     void getInstrument04() {
@@ -50,8 +50,9 @@ class InstrumentCaseTest {
     }
     @Test
     void getInstrument07() {
-       WoodwindInstrument[] woodwindInstruments = new Flute[10];
-       woodwindInstruments[0] = new Flute("Flute", "Wood", "60cm", "Metal", "C");
-       System.out.println(woodwindInstruments[0]);
+        WoodwindInstrument[] woodwindInstruments = new Flute[10];
+        woodwindInstruments[0] = new Flute("Flute", "Wood", "60cm", "Metal", "C");
+        System.out.println(woodwindInstruments[0]);
     }
+
 }

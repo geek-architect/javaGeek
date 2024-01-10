@@ -15,6 +15,9 @@ public class Instrument {
         this.name = name;
     }
 
+    public Instrument() {
+    }
+
     /**
      * 返回乐器的名称。
      *

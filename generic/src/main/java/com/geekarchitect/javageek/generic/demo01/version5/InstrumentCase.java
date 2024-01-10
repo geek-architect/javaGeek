@@ -6,7 +6,7 @@ import com.geekarchitect.javageek.generic.Instrument.Instrument;
  * InstrumentCase 类，用于存储各种类型的乐器。
  * @param <T> 要存储的乐器类型，必须是 Instrument 的子类型
  */
-public class InstrumentCase<T extends Instrument> {
+public class InstrumentCase <T extends Instrument>{
     private T instrument;
 
     /**
@@ -15,6 +15,9 @@ public class InstrumentCase<T extends Instrument> {
      */
     public InstrumentCase(T instrument) {
         this.instrument = instrument;
+    }
+
+    public InstrumentCase() {
     }
 
     /**

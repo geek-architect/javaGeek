@@ -15,6 +15,9 @@ public class InstrumentCase<T> {
         this.instrument = instrument;
     }
 
+    public InstrumentCase() {
+    }
+
     /**
      * 返回乐器盒中存放的乐器。
      * @return 存放的乐器

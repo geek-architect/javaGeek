@@ -11,7 +11,8 @@ class InstrumentCaseTest {
     @Test
     public void testGetInstrument01() {
         Flute flute = new Flute("Flute", "wood", "40cm", "reed", "C");
-        InstrumentCase instrumentCase = new InstrumentCase(flute);
+        InstrumentCase instrumentCase = new InstrumentCase();
+        instrumentCase.setFlute(flute);
         // 从乐器盒中取出长笛,不需要进行强制类型转换
         Flute theFlute = instrumentCase.getFlute();
         System.out.println(theFlute);

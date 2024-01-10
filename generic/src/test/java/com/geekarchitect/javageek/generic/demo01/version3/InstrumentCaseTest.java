@@ -9,9 +9,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class InstrumentCaseTest {
     @Test
     public void testGetInstrument01() {
-        Brick brick= new Brick(2, 4, 6);
-        // 从乐器盒无法放入板砖，因为板砖不属于乐器的子类
-        //InstrumentCase instrumentCase = new InstrumentCase(brick);
+       Brick brick=new Brick(3,4,5);
+         InstrumentCase instrumentCase=new InstrumentCase();
+         //instrumentCase.setInstrument(brick);
     }
     @Test
     public void testGetInstrument02() {

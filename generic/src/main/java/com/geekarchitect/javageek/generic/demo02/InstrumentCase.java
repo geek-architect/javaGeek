@@ -7,7 +7,7 @@ import com.geekarchitect.javageek.generic.Instrument.Instrument;
  * @param <T> 要存储的第一种乐器类型，必须是 Instrument 的子类型
  * @param <U> 要存储的第二种乐器类型，必须是 Instrument 的子类型
  */
-public class InstrumentCase<T extends Instrument, U extends Instrument> {
+public class InstrumentCase<T, U> {
     private T instrument1;
     private U instrument2;
 
@@ -21,6 +21,8 @@ public class InstrumentCase<T extends Instrument, U extends Instrument> {
         this.instrument2 = instrument2;
     }
 
+    public InstrumentCase() {
+    }
     /**
      * 返回存储的第一种乐器。
      * @return 存储的第一种乐器
